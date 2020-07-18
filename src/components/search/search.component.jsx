@@ -8,7 +8,7 @@ const Search = ({ searchChange }) => {
       <input
         className={styles.searchStyles}
         type="search"
-        placeholder="search by firstname"
+        placeholder="search by breed name"
         onChange={searchChange}
       />
     </div>

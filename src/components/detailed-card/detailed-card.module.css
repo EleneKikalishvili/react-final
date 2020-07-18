@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: auto;
+  border: 1px solid black;
+  margin: 15px;
+  padding: 10px;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.animalImg {
+  display: flex;
+  width: 30%;
+  height: 30%;
+  margin: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: medium;
+}
