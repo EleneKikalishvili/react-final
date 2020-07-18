@@ -3,6 +3,7 @@ import { getBreeds, getDetailedInfo } from "../../api";
 
 import DetailedCard from "../detailed-card/detailed-card.component";
 import withSpinner from "../spinner/spinner.component";
+import Selector from "../selector/selector.component";
 
 import styles from "./select.module.css";
 
@@ -45,15 +46,7 @@ function Select() {
 
   return (
     <div className={styles.container}>
-      <select
-        className="custom-select my-1 mr-sm-2"
-        id="inlineFormCustomSelectPref"
-        defaultValue={"default"}
-        onChange={handleChange}
-      >
-        <option value="default">Choose...</option>
-        {options}
-      </select>
+      <Selector options={options} handleChange={handleChange} />
       <div className={styles.cardContainer}>
         {!selected ? (
           <h3 className={styles.msg}>Nothing To Show</h3>
