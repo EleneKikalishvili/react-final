@@ -42,7 +42,7 @@ function Breeds() {
 
   return (
     <div>
-      <Search searchChange={onSearchChange} />
+      <Search searchChange={onSearchChange} holder="Breed Name" />
       <div className={styles.breedsContainer}> {content}</div>
     </div>
   );
