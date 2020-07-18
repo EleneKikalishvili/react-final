@@ -2,13 +2,13 @@ import React from "react";
 
 import styles from "./search.module.css";
 
-const Search = ({ searchChange }) => {
+const Search = ({ searchChange, holder }) => {
   return (
     <div className={styles.container}>
       <input
         className={styles.searchStyles}
         type="search"
-        placeholder="search by breed name"
+        placeholder={holder}
         onChange={searchChange}
       />
     </div>

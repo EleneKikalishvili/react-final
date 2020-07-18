@@ -1,5 +1,5 @@
 import React from "react";
-import Select from "../../components/select/select.component";
+import Select from "../../components/select-breed/select.component";
 
 import styles from "./detailed-info.module.css";
 

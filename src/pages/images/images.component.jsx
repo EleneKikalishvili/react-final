@@ -37,6 +37,7 @@ function Images() {
 
   if (images) {
     content = images.map((image) => {
+      console.log(image);
       return <ImageCard key={image.id} image={image.url} />;
     });
   }
