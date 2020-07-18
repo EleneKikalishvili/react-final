@@ -28,7 +28,7 @@ function Images() {
 
   const onClick = () => {
     searchPage && imageNum
-      ? getImages(searchPage, imageNum)
+      ? getImages(imageNum, searchPage)
       : window.alert("provide both parameters");
     console.log("clicked");
   };
