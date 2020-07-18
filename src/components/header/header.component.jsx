@@ -24,13 +24,13 @@ function Header({ currentUser, setCurrentUser }) {
 
           <div className={styles.options}>
             <NavLink className={styles.optionsLink} to="/">
-              Home
+              Breeds
             </NavLink>
-            <NavLink className={styles.optionsLink} to="/users">
-              Users{" "}
+            <NavLink className={styles.optionsLink} to="/detailed">
+              Detailed Info{" "}
             </NavLink>
-            <NavLink className={styles.optionsLink} to="/posts">
-              Posts
+            <NavLink className={styles.optionsLink} to="/images">
+              Images
             </NavLink>
           </div>
           <div className={styles.logout}>
