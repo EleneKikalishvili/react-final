@@ -11,8 +11,8 @@ function Images() {
   const [imageNum, setImageNum] = useState("");
   const [images, setImages] = useState("");
 
-  const getImages = (page, limit) => {
-    getSearchedImages(page, limit).then((res) => {
+  const getImages = (limit, page) => {
+    getSearchedImages(limit, page).then((res) => {
       console.log(res.data);
       setImages(res.data);
     });
@@ -37,7 +37,7 @@ function Images() {
 
   if (images) {
     content = images.map((image) => {
-      console.log(image);
+      console.log(image.url);
       return <ImageCard key={image.id} image={image.url} />;
     });
   }
